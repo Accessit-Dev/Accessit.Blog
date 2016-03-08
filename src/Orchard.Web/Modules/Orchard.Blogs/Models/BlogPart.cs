@@ -8,11 +8,6 @@ namespace Orchard.Blogs.Models {
             get { return this.As<ITitleAspect>().Title; }
         }
 
-        public string Title
-        {
-            get { return this.As<ITitleAspect>().Title; }
-        }
-
         public string Description {
             get { return this.Retrieve(x => x.Description); }
             set { this.Store(x => x.Description, value); }
